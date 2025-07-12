@@ -2,18 +2,22 @@ body {
   background: #040007;
 }
 h1 {
-  color: #ff206e;
+  color: #040007;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: 800;
-  font-size: 47px;
+  font-size: 48px;
+}
+h1:hover {
+  color: #ff206e;
+  cursor: pointer;
 }
 h2 {
-  margin: 0 0 3px;
+  margin: 0 0 1px;
 
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
-  color: #000000;
+  color: #040007;
   font-family: "Times New Roman", Times, serif;
 }
 select {
@@ -26,7 +30,7 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: #fcf9ff;
+  background-color: #f9fbff;
   padding: 45px;
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -48,7 +52,7 @@ select {
   opacity: 0.7;
 
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: #252525;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,10 +74,11 @@ footer {
   text-align: center;
 }
 a {
-  color: #ff206e;
+  color: #d5cedc;
   text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: underline;
-  color: pink;
+  color: #9ed3ff;
 }

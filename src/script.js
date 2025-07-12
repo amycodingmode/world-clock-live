@@ -44,6 +44,9 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   } // Default to user's current timezone
+  if (cityTimeZone === "choose") {
+    refreshPage(); // Reload page if "Choose a city" is selected;
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -65,3 +68,10 @@ setInterval(updateTime, 1000); // update every second
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+function refreshPage() {
+  window.location.reload();
+}
+
+let defaultSelected = document.querySelector("#default");
+defaultSelected.addEventListener("click", refreshPage);
